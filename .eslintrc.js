@@ -7,7 +7,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:node/recommended',
-    'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended',
   ],
   rules: {
@@ -20,14 +19,5 @@ module.exports = {
     'node/no-missing-require': 'off',
     'node/shebang': 'off',
     'no-console': 'error',
-  },
-  overrides: [
-    {
-      files: ['*.js'],
-      rules: {
-        '@typescript-eslint/no-var-requires': 'off',
-        'node/no-unpublished-require': 'off',
-      },
-    },
-  ],
+  }
 }

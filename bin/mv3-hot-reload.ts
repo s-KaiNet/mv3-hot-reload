@@ -48,8 +48,7 @@ wss.on('connection', (ws) => {
     ignoreInitial: true,
   })
 
-  watcher.on(
-    'all',
+  watcher.on('all',
     debounce((_, path) => {
       if (!excludePaths.includes(path)) {
         if (!quiet) {
